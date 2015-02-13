@@ -1,0 +1,33 @@
+How To Run:
+
+* python run.py 
+	-- This will create game7-minimax.png, game15-minimax.png, game21-minimax.png, game7-alpha-beta.png, game15-alpha-beta.png, game21-alpha-beta.png, moore7.png and moore15.png
+	-- The limitation on number of nodes in the visualization can be changed by changing "id > 200" part in the representTree and representTreeAlpha definitions
+
+* If you want to play game : 
+	** import main
+	** g = main.nimGame(7,'M') 
+	   main.main_play(g)
+	** g = main.nimGame(7,'H')
+	   main.main_play(g)
+
+* To test random player vs alphabeta player game:
+	** import main
+	** g = main.nimGame(7,'H')
+	   main.randomPlayHFirst(g)
+	** g = main.nimGame(7,'M')
+	   main.randomPlayMFirst(g)
+
+* To test random player vs random player game:
+	** import main
+	** g = main.nimGame(7,'M')
+	   main.play_game(g,main.random_player,main.random_player)
+	   
+* To Find Nodes in the game tree:
+	** import main
+	**	g = main.nimGame(7,'M')
+		root = main.Node(g.initial)
+		newroot = main.makeTreeMinimax(root,g)
+		main.findNodes(newroot)
+	**	newroot2 = main.makeTreeAlphaBeta(root,g)
+		main.findNodes(newroot2)

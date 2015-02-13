@@ -1,0 +1,8 @@
+I have made use of following Resources and would like to acknowledge them.
+
+1) AIAMA-Python  https://code.google.com/p/aima-python/ (used code for game, utils, etc.)
+2) https://docs.python.org  
+3) http://stackoverflow.com
+4) https://wikipedia.com
+5) pydot documentation
+6) Artificial Intelligence - A modern Approach by Russel and Norwig
